@@ -12,7 +12,7 @@ npm run dev
 
 ## Enhancements & Challenges
 
-1. Create a login/register page and functionality.
+1. Create a login/register page and functionality 😅
 2. Using browser local storage to store in-cart data instead of vuex store.
 3. I could have been able to add pagination functionality if the API call I used was supporting the Limit and Offset params.
 4. Add "click outside" functionality to close dropdowns when clicking anywhere else outside them.
