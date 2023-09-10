@@ -89,8 +89,8 @@ export default {
     return {
       isFilterMenuOpen: false,
       isSortMenuOpen: false,
-      plants: undefined,
-      renderedPlants: undefined,
+      plants: [],
+      renderedPlants: [],
     };
   },
 

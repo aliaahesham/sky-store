@@ -12,11 +12,13 @@
           <span>$</span><span>{{ plant.price }}</span>
         </h6>
       </div>
-      <font-awesome-icon
-        :icon="['fas', 'cart-plus']"
-        flip="horizontal"
-        class="cart-icon"
-      />
+      <button class="plant__btn" @click="addToCart(plant)">
+        <font-awesome-icon
+          :icon="['fas', 'cart-plus']"
+          flip="horizontal"
+          class="cart-icon"
+        />
+      </button>
     </div>
   </div>
 </template>
@@ -25,8 +27,10 @@
 export default {
   props: ['plant'],
 
-  mounted() {
-    // console.log('plant', this.plant?.title);
+  methods: {
+    addToCart(plant) {
+      this.$store?.state?.inCart?.push(plant);
+    },
   },
 };
 </script>
@@ -78,6 +82,10 @@ export default {
       }
     }
 
+    .plant__btn {
+      background: transparent;
+      border: none;
+    }
     .cart-icon {
       color: var(--primary);
       font-size: 24px;

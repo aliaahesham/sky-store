@@ -15,7 +15,11 @@
 
     <nav>
       <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">Login/Register</RouterLink>
+      <RouterLink to="/login">Login/Register</RouterLink>
+      <RouterLink to="/cart"><font-awesome-icon
+          :icon="['fas', 'cart-plus']"
+          flip="horizontal"
+        /></RouterLink>
     </nav>
   </header>
 
