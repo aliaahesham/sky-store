@@ -1,35 +1,23 @@
-# sky-store
+# Sky-Store
 
-This template should help get you started developing with Vue 3 in Vite.
+Sky Store is an online plant shop
+## Installation
 
-## Recommended IDE Setup
+node version ^18
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+```bash
+npm i
 npm run dev
 ```
 
-### Compile and Minify for Production
+## Enhancements & Challenges
 
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+1. Create a login/register page and functionality.
+2. Using browser local storage to store in-cart data instead of vuex store.
+3. I could have been able to add pagination functionality if the API call I used was supporting the Limit and Offset params.
+4. Add "click outside" functionality to close dropdowns when clicking anywhere else outside them.
+5. Add snackbar whenever clicking on the "add to cart" icon.
+6. Separate dropdown code into a separate component, and use this component inside the PlantsList.vue Component.
+7. The logo in the header navigates to the home page.
+8. Give more attention to responsive design (mobile and tablet).
+9. Fix a bug I have in the filtering & sorting functionality.
